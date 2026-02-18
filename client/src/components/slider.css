@@ -1,0 +1,43 @@
+/* Base state - all cards */
+.testimonial-slider .slick-slide .testimonial-card {
+  background-color: #eeeeee;
+  /* secondary (orange) */
+  color: white;
+  transition: all 0.5s ease;
+  height: 366px;
+  opacity: 0.5;
+}
+
+/* Apply blur and transform only for screens >= 768px */
+@media (min-width: 768px) {
+  .testimonial-slider .slick-slide .testimonial-card {
+    transform: scale(0.8) translateY(-30px);
+    filter: blur(2px);
+  }
+}
+
+/* Active center card */
+.testimonial-slider .slick-center .testimonial-card {
+  background-color: #eeeeee;
+  /* primary (dark blue) */
+  color: black;
+  opacity: 1;
+
+  filter: none;
+  /* remove blur for center */
+  z-index: 2;
+}
+
+/* Active center card */
+.testimonial-slider .slick-center .testimonial-card {
+  background-color: #eeeeee;
+  /* primary */
+  color: black;
+  opacity: 1;
+  transform: scale(1.1) translateY(90px);
+  z-index: 2;
+}
+
+.testimonial-slider .slick-track {
+  height: 485px;
+}

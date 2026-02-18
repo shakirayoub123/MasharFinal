@@ -1,0 +1,35 @@
+@keyframes spin-slow {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-spin-slow {
+  animation: spin-slow 10s linear infinite;
+}
+#root{
+    overflow:hidden;
+}
+p {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal; /* Regular = normal */
+    font-size: 15px;
+    line-height: 30px;
+    letter-spacing: 0.5px;
+}
+
+/* ===== Global Heading Styles ===== */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Spartan", sans-serif;
+    letter-spacing: 0.5px;
+    margin: 0;
+}
