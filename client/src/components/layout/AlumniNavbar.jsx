@@ -66,7 +66,7 @@ export default function AlumniNavbar({ toggleSidebar, openMobile, user }) {
 
   const logout = () => {
     localStorage.removeItem("alumni_token");
-    navigate("/login");
+    navigate("/alumni-login");
   };
 
   const unreadNotifs = notifications.filter((n) => n.unread).length;

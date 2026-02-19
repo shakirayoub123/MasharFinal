@@ -34,4 +34,25 @@ router.put("/like/:id", protect, async (req, res) => {
   res.json(post);
 });
 
+// ADD COMMENT
+router.post("/:postId/comments", protect, async (req, res) => {
+  const { body } = req.body;
+
+  const post = await Post.findById(req.params.postId);
+
+  const newComment = {
+    body,
+    author: {
+      id: req.alumni._id,
+      name: req.alumni.name
+    }
+  };
+
+  post.comments.push(newComment);
+  await post.save();
+
+  res.json(newComment);
+});
+
+
 module.exports = router;

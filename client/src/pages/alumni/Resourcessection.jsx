@@ -248,7 +248,7 @@ function MastermindMedia() {
     const sections = [
         { id: "video", label: "🎥 Videos", count: mediaData.videos.length },
         { id: "podcast", label: "🎙️ Podcasts", count: mediaData.podcasts.length },
-        { id: "blog", label: "✍️ Blog", count: mediaData.blogs.length },
+        { id: "blog", label: "✍️ Articles", count: mediaData.blogs.length },
     ];
 
     return (
