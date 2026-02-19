@@ -24,6 +24,7 @@ import Profile from "../pages/alumni/Profile.jsx";
 import LatestResources from "../components/alumni/LatestResources.jsx";
 import Messages from "../components/alumni/Messages.jsx";
 import Notifications from "../components/alumni/Notifications.jsx";
+import ResourcesSection from "../pages/alumni/Resourcessection.jsx";
 
 const browserRoutes = createBrowserRouter([
   // 🌐 Public website (with App layout)
@@ -76,6 +77,8 @@ const browserRoutes = createBrowserRouter([
       { path: "resources", element: <LatestResources /> },
       { path: "messages", element: <Messages /> },
       { path: "notifications", element: <Notifications /> },
+      { path: "resourcessection", element: <ResourcesSection /> },
+
 
 
 

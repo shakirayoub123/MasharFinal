@@ -36,8 +36,8 @@ export default function AlumniSidebar({ collapsed, mobileOpen, closeMobile }) {
           <Section label="Main" collapsed={collapsed} />
           <Item to="/alumni" icon="🏠" label="Dashboard" collapsed={collapsed} />
           <Item to="/alumni/profile" icon="👤" label="My Profile" collapsed={collapsed} />
-          <Item to="/alumni/messages" icon="💬" label="Messages" badge="3" red collapsed={collapsed} />
-          <Item to="/alumni/notifications" icon="🔔" label="Notifications" badge="5" collapsed={collapsed} />
+          {/* <Item to="/alumni/messages" icon="💬" label="Messages" badge="3" red collapsed={collapsed} />
+          <Item to="/alumni/notifications" icon="🔔" label="Notifications" badge="5" collapsed={collapsed} /> */}
 
           <Section label="Community" collapsed={collapsed} />
           <Item to="/alumni/directory" icon="🧑‍🤝‍🧑" label="Alumni Directory" collapsed={collapsed} />
@@ -47,8 +47,8 @@ export default function AlumniSidebar({ collapsed, mobileOpen, closeMobile }) {
           <Item to="/alumni/events" icon="🎟️" label="Events" collapsed={collapsed} />
 
           <Section label="Resources" collapsed={collapsed} />
+          <Item to="/alumni/resourcessection" icon="🗂️" label="Resource Library" collapsed={collapsed} />
           <Item to="/alumni/learning" icon="📚" label="Learning Hub" collapsed={collapsed} />
-          <Item to="/alumni/resources" icon="🗂️" label="Resource Library" collapsed={collapsed} />
           <Item to="/alumni/calendar" icon="📅" label="Program Calendar" collapsed={collapsed} />
 
         </nav>
